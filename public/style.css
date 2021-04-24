@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  background: #071e3d;
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 3rem;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+header {
+  margin: 2rem 2rem 0rem 2rem;
+  padding: 2rem;
+  background: #278ea5;
+}
+#heroesForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#heroesForm h1 {
+  flex: 1;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+#addHero,
+#home {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-size: 2.2rem;
+  transition: 0.2s ease-in;
+}
+#addHero:hover,
+#home:hover {
+  background: black;
+  color: white;
+}
+#home {
+  margin-right: 2rem;
+  text-decoration: none;
+  color: black;
+  background: #efefef;
+}
+
+.heroesList {
+  padding: 2rem;
+  margin: 0rem 2rem;
+  background: black;
+}
+
+.heroName {
+  font-size: 2.5rem;
+}
+.heroDmg {
+  font-size: 2.2rem;
+  margin: 1rem 0rem;
+}
+.editButton,
+.deleteButton {
+  font-size: 2.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.editButton {
+  background: #1ca58c;
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+  margin-right: 1rem;
+}
+.editButton:hover {
+  color: black;
+}
+.deleteButton {
+  background: #2d8474;
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+.deleteButton:hover {
+  color: black;
+}
+footer {
+  padding: 2rem;
+  margin: 0rem 2rem;
+  border-top: 0.1rem solid #278ea5;
+}
+footer h5 {
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+}
+#bottomBorder {
+  border-bottom: 0.1rem solid #278ea5;
+}
+#heroCreate {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.top,
+.bottom {
+  width: 100%;
+  display: flex;
+  margin: 1rem;
+}
+
+label[for="name"],
+label[for="dmg"] {
+  font-size: 2rem;
+  padding: 1rem;
+  max-width: 10rem;
+  display: flex;
+  justify-content: flex-end;
+}
+label[for="name"] {
+  padding: 1rem 1rem 1rem 3rem;
+}
+#name,
+#dmg {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  outline: 0;
+  border: 0;
+  max-width: 50rem;
+  display: flex;
+}
+#nameE,
+#dmgE {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  outline: 0;
+  border: 0;
+  max-width: 50rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+#done {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-size: 2.2rem;
+  transition: 0.2s ease-in;
+
+  background: #1ca58c;
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+  margin-right: 1rem;
+}
+#done:hover {
+  color: black;
+}
+#createDiv {
+  width: 47rem;
+  text-align: center;
+}
+#create {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+
+  transition: 0.2s ease-in;
+}
+#create:hover {
+  background: black;
+  color: white;
+}
+
+.green {
+  display: none;
+  color: green;
+  padding: 1rem 2rem;
+  width: 47rem;
+  text-align: center;
+
+  transition: 0.3s ease-in;
+}
+.green.noHide {
+  display: block;
+}
